@@ -1,98 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            
-            nav {
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 1;
-            }
-            nav ul {
-                list-style-type: none;
-                background-color: #FFFFFF;
-                padding: 20px 20px;
-                margin: 0;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            nav li {
-                display: inline-block;
-                margin-right: 14px;
-            }
-            nav a {
-                color: rgb(110, 49, 70);
-                padding: 8px 16px;
-                text-decoration: none;
-                font-size: 15px;
-                font-weight: 600;
-                text-transform: capitalize;
-                letter-spacing: 1px;
-            }
-            nav a:hover {
-                color: #D65A7A;
-            }
-           body, html {
-            height: 100%;
-           }
-           .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Yumora.jpg");
-            height: 100%;
-            background-position: center;
-            Background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-           }
-           .hero-text {
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            bottom: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Times New Roman', Times, serif;
-            font-size: x-large;
-            font-style: normal;
-            color: white;
-           }
-           .box {
-            width: 200px;
-            padding: 16px;
-            background: #f5f5;
-           }
-           section.events {
-            padding: 72px 0 40px;
-           }
-           .wrap {
-            padding: 72px 0 40 px;
-           }
-           * {
-            box-sizing: 1080px;
-            margin: 0 auto;
-           }
-           section {
-            display: block;
-            unicode-bidi: isolate;
-           }
-           body {
-            background: var(--whey);
-            color: var(--char);
-            font-family: var(--font-body);
-            line-height: 1.5;
-            background-image: radial-gradient(circle, rgba(36,29,20,0.05) 1px,
-            transperent 1.2px);
-            background-size: 14px 14px;
-            padding-bottom: 90px;
-           }
-           :root {
-            --whey: #ffcec8;
-            --char: #f9cf79;
-            --clay: #d7403f;
-            --curd: #97caa9;
-            --salt: #d9d2bc;
-            --font-display: 'Archivo black', sFrankinerif;
-            --font-body: 'Libre ', sans-serif;
-            --font-mono: 'IBM Plex Mono', monospace;
-           }
-           button{
-            background-color: #d7403f;
-           }
-        
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 14px;
+}
+nav a {
+    color: rgb(110, 49, 70);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+nav a:hover {
+    color: #D65A7A;
+}
+html, body {
+    height: 100%;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Yumora.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: normal;
+    color: white;
+    .yay {
+        font-style: italic;
+     }
+}
+button {
+    background-color: #d7403f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.events {
+    padding: 72px 0 40 px;
+    scroll-margin-top: 90px;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24 px;
+}
+.wrap h2 {
+    width: 90%;
+}
+    
+.event-card {
+    background: #fdf8f0;
+    border: 1px solid #e5d9c3;
+    border-radius: 10px;
+    padding: 28px;
+    flex: 1 1 260px;
+    text-align: left;
+}
+.reserve-btn {
+  display: inline-block;
+  background: #d9534f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.event-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #7a1f2b;
+  margin-bottom: 10px;
+}
