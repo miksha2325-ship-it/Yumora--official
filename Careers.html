@@ -1,0 +1,256 @@
+<!--Velasco Princess Arfa Peren, 261447B-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Careers</title>
+        
+        <style>
+            body {
+                background-color: #FFCEC8; 
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
+                color: rgb(110, 49, 70);
+                margin: 0;
+            }
+
+            nav ul { 
+                list-style-type: none;
+                background-color: #FFFFFF;
+                padding: 20px 10px;
+                margin: 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            nav li  {
+                display: inline-block; margin-right: 14px; 
+            }
+            
+            nav a  { 
+              color: rgb(110, 49, 70);
+              padding: 8px 16px;
+              text-decoration: none;
+              font-family: 'Inter', sans-serif;
+              font-size: 15px;
+              font-weight: 600;
+              text-transform: capitalize;
+              letter-spacing: 1px;
+            }
+
+            nav a:hover {
+              color: #D65A7A;
+            }
+
+            figure {
+                margin: 0;
+            }
+
+            figure img {
+                display: block;
+            }
+
+            .content-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                min-height: calc(100vh - 100px);
+                box-sizing: border-box;
+            }
+
+            .text-content {
+                align-items: center;
+            }
+            
+            .box-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 300px;
+                padding: 20px;
+                background-color: #FFFFFF;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                align-items: stretch
+            }
+
+            .section {
+                padding: 100px 20px;
+                box-sizing: border-box;
+            }
+
+            table {
+                width: 90%; 
+                max-width: 1400px; 
+                font-size: 1.3rem; 
+                border-collapse: collapse;
+                background-color: #FFFFFF;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                padding: 6px 8px;
+                margin: 0 auto;
+            }
+
+            th, td {
+                padding: 30px;
+                text-align: center;
+            }
+
+            .form-question {
+                width: 400px;
+                margin: 20px auto;
+                text-align: left;
+                background-color:#FFFFFF;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            </style>
+    </head>
+    <body>
+
+        <nav>
+          <ul>
+             <li><a href="index.html">Products</a></li>
+             <li><a href="about.html">About Us</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="careers.html">Careers</a></li>
+             <li><a href="locations.html">Locations</a></li>
+             <li><a href="events.html">Events</a></li>
+          </ul>
+        </nav>
+
+        <div class="content-wrapper">
+            <figure>
+                <img src="images/dried-yoghurt-bowl.jpg" 
+                alt="dried yoghurt in a bowl" width="500" height="500">
+            </figure>
+            
+            <div class="text-content">
+                <h1>Careers</h1>
+                <p>Join the team behind every healthy bite! We are always looking for passionate individuals to help us deliver the best healthy food experiences!</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <table>
+                <tr>
+                    <th>Job Positions</th>
+                    <th>Job Description</th>
+                    <th>Salary</th>
+            </tr>
+            <tr>
+                <td>Store Manager</td>
+                <td>Oversee daily operations of the store</td>
+                <td>$3500</td>
+            </tr>
+            <tr>
+                <td>Assistant Store Manager</td>
+                <td>Assist the store manager in managing the store</td>
+                <td>$3000</td>
+            </tr>
+            <tr>
+                <td>Service Crew</td>
+                <td>Provide excellent customer service and assist in food preparation</td>
+                <td>$2000</td>
+            </tr>
+        </table>
+        </section>
+
+        <section class="section">
+        <h1>Why join Yumora?</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <h2>Taste the Difference</h2>
+                <p>You'll help make snacks with real fruit and honest ingredients — food you'd actually want to eat</p>
+            </div>
+            
+            <div class="box">
+                <h2>Opportunities for Growth</h2>
+                <p>Most of our store managers started as crew. We promote from inside, first, every time.</p>
+            </div>
+
+            <div class="box">
+                <h2>Passionate Team</h2>
+                <p>We are looking for individuals who are passionate about food and customer service. Be ready to serve our customers with a smile.</p>
+
+            </div>
+        </div>
+        </section>
+        
+    <section class="section">
+        <h2>Application Form</h2>
+        <form action="thankyou.html" method="get">
+            <div class="form-question">
+            <label for="custname">Name:</label><br>
+            <input type="text" id="custname" name="custname" size="30" 
+            placeholder="e.g.,Lim Wee" required>
+            <br><br>
+            
+            <label for="custemail">Email:</label><br>
+            <input type="email" id="custemail" name="custemail" size="30"
+            placeholder="e.g.,limwee@email.com" required>
+            <br><br>
+    
+            <label for="custphone">Phone Number:</label><br>
+            <input type="tel" id="custphone" name="custphone" size="30"
+            placeholder="e.g.,0123456789" required>
+            <br><br>
+            
+            <label for="q1">Do you want to work full-time or part-time?</label><br>
+            <select id="q1" name="q1" required>
+                <option value="">Select an option</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+            </select>
+            <br><br>
+            
+            <label for="q2">Which job position do you want?</label><br>
+            <select id="q2" name="q2" required>
+                <option value="">Select a position</option>
+                <option value="Store Manager">Store Manager</option>
+                <option value="Assistant Store Manager">Assistant Store Manager</option>
+                <option value="Service Crew">Service Crew</option>
+            </select>
+        <br><br>
+        
+        <label for="q3">Do you have any previous work experience?</label><br>
+        <textarea id="q3" name="q3" rows="5" cols="50" placeholder="Please describe your work experience here..." required></textarea>
+        <br><br>
+        
+        <label for="q4">Do you have a food and hygiene certificate?</label><br>
+        <input type="radio" id="yes" name="q4" value="Yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="q4" value="No">
+        <label for="no">No</label>
+        <br><br>
+
+        <label for="q5">How long can you commit to working here?</label><br>
+        <textarea id="q5" name="q5" rows="5" cols="50" placeholder="How many months can you work here?" required></textarea>
+        <br><br>
+
+        <label for="q6">We require service crew to work for a minimum of 3 months, 2 times a week.
+           <br> Will you be able to commit to this requirement?</label><br>
+        <input type="radio" id="yes2" name="q6" value="Yes" required>
+        <label for="yes2">Yes</label><br>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    </section>
+    </body>
+</html>
+<!--image credits:https://mattsfitchef.com/matcha-yogurt-bowl/-->
