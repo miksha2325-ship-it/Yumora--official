@@ -1,303 +1,3 @@
-<<<<<<< HEAD
- /*Velasco Princess Arfa Peren, 261447B, 
- style for careers and about us page */
-
- :root {
-     --nav-white: #fdf8f0;
-     --nav-beige: #f5e8d4;
-     --nav-hover: #eacad2;
-     --nav-maroon: rgb(110, 49, 70);
-     --nav-text: #3D1F2B;
-     --nav-height: 100px;
- }
- * { box-sizing: border-box; }
- 
- body {
-     background-color: var(--nav-beige); 
-     font-family: 'Inter', sans-serif;
-     font-size: 20px;
-     text-align: center;
-     color: #3D1F2B;
-     margin: 0;
- }
- 
-h1, h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.text-content p {
-    font-style: italic;
-}
-
-.box h2,
-.box p {
-    font-family: 'Playfair Display', serif;
-}
-
- nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--nav-maroon);
-    padding: 12px 24px;
-    box-sizing: border-box;
-    width: 100%;
-   }
-
-   nav ul { 
-    list-style-type: none;
-    background-color: var(--nav-maroon);
-    margin: 0;
-    padding: 0;
- }
- 
- .logo {
-     height: 80px;
-     width: 80px;
-     border-radius: 50%;
-     background: var(--nav-beige);
-     border: 2px solid var(--nav-maroon);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-weight: 700;
-     font-size: 12px;
-     text-align: center;
-     flex-shrink: 0;
- }
-
- nav li  {
-     display: inline-block; margin-right: 14px; 
- }
- 
- .nav-links a {
-    text-decoration: none;
-    color: var(--nav-white);
-    font-weight: 700;
-    font-size: 1.3rem;
-    white-space: nowrap;
-    padding: 8px 16px;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 1px;
-    transition: color 0.2s ease;
-}
-
-.nav-links a:hover,
-.nav-links a:focus-visible {
-    text-decoration: underline;
-    color: var(--nav-hover);
-}
-
- .menu-toggle {
-     display: none;
- }
-           
- .hamburger-label {
-     display: none;
-     flex-direction: column;
-     gap: 5px;
-     cursor: pointer;
-     padding: 10px;
- }
- 
- .hamburger-label span {
-   width: 28px;
-   height: 3px;
-   background: var(--nav-white);
-   border-radius: 2px;
- }
- 
- /* tablet */
- @media (max-width: 1024px) {
-     .nav-links {
-       gap: 22px;
-     }
-     .nav-links a {
-       font-size: 1.1rem;
-     }
- }
- /* mobile */
- @media (max-width: 768px) {
-     .navbar {
-       padding: 0 20px;
-     }
-  
-     .hamburger-label {
-       display: flex;
-     }
-            
-     .nav-links {
-         display: none;
-         flex-direction: column;
-         position: absolute;
-         top: var(--nav-height);
-         left: 0;
-         right: 0;
-         background-color: var(--nav-maroon);
-         padding: 20px 30px;
-         gap: 20px;
-         z-index: 10;
-     }
-
-     .menu-toggle:checked ~ .nav-links {
-         display: flex;
-     }
-
-     .nav-links a {
-         font-size: 1.2rem;
-         color: var(--nav-hover)
-     }
- }
-
- figure {
-     margin: 0;
- }
-
- figure img {
-     display: block;
-     width: 500px;
-     height: 500px;
-     object-fit: cover;
-     border-radius: 8px;
- }
-        
- .content-wrapper {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 20px;
-     min-height: calc(100vh - 100px);
-     box-sizing: border-box;
-     flex-direction: row;
- }
-
- .text-content {
-     max-width: 600px;
- }
- /* tablet and mobile*/
- @media (max-width: 1024px) {
-     .content-wrapper {
-         flex-direction: column;
-         text-align: center;
-         padding: 40px 20px;
-     }
-
-     figure img {
-         width: 90vw;
-         max-width: 500px;
-         height: auto;
-         aspect-ratio: 1 / 1;
-     }
- }
-
- .box-container {
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-     flex-wrap: wrap;
- }
-
- .box {
-     width: 300px;
-     padding: 20px;
-     background-color: var(--nav-white);
-     border-radius: 5px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     text-align: center;
- }
-
- .section {
-     padding: 100px 20px;
-     box-sizing: border-box;
- }
-
- table {
-     width: 90%; 
-     max-width: 1400px; 
-     font-size: 1.3rem; 
-     border-collapse: collapse;
-     background-color: var(--nav-white);
-     border-collapse: collapse;
- }
-            
- table, th, td {
-     border: 1px solid var(--nav-maroon);
-     padding: 6px 8px;
-     margin: 0 auto;
-     font-family: 'Playfair Display', serif;
- }
-
- th, td {
-     padding: 30px;
-     text-align: center;
- }
-
- .table-wrapper {
-     overflow-x: auto;
- }
- 
- @media (max-width: 768px) {
-     table {
-         font-size: 0.9rem;
-     }
-     th, td {
-         padding: 12px;
-     }
- }
-
- .form-question {
-     width: 400px;
-     margin: 20px auto;
-     text-align: left;
-     background-color:var(--nav-white);
-     padding: 20px;
-     border-radius: 5px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     font-family: 'Playfair Display', serif;
- }
-
- .form-question label {
-    font-family: 'Playfair Display', serif;
-}
-
- .form-question textarea,
- .form-question select,
- .form-question input[type="text"],
- .form-question input[type="email"],
- .form-question input[type="tel"] {
-     width: 100%;
-     box-sizing: border-box;
-     font-family: inherit;
-     font-size: 1rem;
-     padding: 8px;
- }
-
-input[type="submit"] {
-    font-family: 'Playfair Display', serif;
-    background-color: var(--nav-maroon);
-    color: var(--nav-white);
-    border: none;
-    padding: 10px 24px;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 10px 5px;
-}
-
-input[type="reset"] {
-    font-family: 'Playfair Display', serif;
-    background-color: transparent;
-    color: var(--nav-maroon);
-    border: 2px solid var(--nav-maroon);
-    padding: 10px 24px;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 10px 5px;
-}
-
-=======
-
 * {
     margin: 0;
     padding: 0;
@@ -305,12 +5,12 @@ input[type="reset"] {
 }
 
 body {
-    background-color: #f5e8df; 
+    background-color: #FFF8EF; 
     font-family: 'Inter', sans-serif;
 }
 
 nav {
-    background-color: rgb(110, 49, 70); 
+    background-color: #97caa9; 
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
@@ -323,7 +23,42 @@ nav {
     width: 80px;
     border-radius: 50%;
     background: #f3f0e6;
-    border: 2px solid #f5e8df;
+    border: 2px solid #97caa9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8EF; 
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: #97caa9; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+.logo {
+    height: 80px; 
+    width: 80px;
+    border-radius: 50%;
+    background: #f3f0e6;
+    border: 2px solid #97caa9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,7 +83,7 @@ nav li {
 }
 
 nav a {
-    color: #f3f0e6;
+    color: #4a4a4a;
     padding: 8px 12px;
     text-decoration: none;
     font-size: 15px;
@@ -358,13 +93,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #eacad2;
+    color: #131212;
     text-decoration: underline;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(30, 61, 46, 0.55), rgba(30, 61, 46, 0.55)), url("images/2024-10-17-17-54-03.jpg");
-    height: 400px;   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/2024-10-17-17-54-03.jpg");
+    height: 400px;   /* or 60vh, or whatever size you want */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +113,7 @@ nav a:hover {
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-}
+           }
 
 .fade-slider {
     position: relative;
@@ -402,4 +137,4 @@ nav a:hover {
 .fade-slider img.active {
     opacity: 1;
 }
->>>>>>> 5c22c8b2e1eb3b5a3365d3ce365d06330f3ea1f1
+
