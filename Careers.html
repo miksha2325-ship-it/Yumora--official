@@ -3,34 +3,78 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Careers</title>
         
         <style>
+            :root {
+            --nav-green: #a8c9a8;
+            --nav-text: #3a3a3a;
+            --nav-height: 100px;
+        }
+
+        * { box-sizing: border-box; }
+
             body {
                 background-color: #FFCEC8; 
                 font-family: Arial, sans-serif;
                 font-size: 20px;
                 text-align: center;
-                align-items: center;
-                color: rgb(110, 49, 70);
+                color: #4A4A4A;
                 margin: 0;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #a8cfb5;
+                padding: 12px 24px;
+                box-sizing: border-box;
+                width: 100%;
             }
 
             nav ul { 
                 list-style-type: none;
-                background-color: #FFFFFF;
-                padding: 20px 10px;
+                background-color: #a8cfb5;
                 margin: 0;
-                width: 100%;
-                box-sizing: border-box;
+                padding: 0;
+            }
+
+            .logo {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background: #f3f0e6;
+                border: 2px solid #a8cfb5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 12px;
+                text-align: center;
+                flex-shrink: 0;
             }
             
             nav li  {
                 display: inline-block; margin-right: 14px; 
             }
             
+            .nav-links a {
+                text-decoration: none;
+                 color: var(--nav-text);
+                 font-weight: 700;
+                 font-size: 1.3rem;
+                 white-space: nowrap;
+               }
+               
+               .nav-links a:hover,
+               .nav-links a:focus-visible {
+                 text-decoration: underline;
+               } 
+
             nav a  { 
-              color: rgb(110, 49, 70);
+              color: #4A4A4A;
               padding: 8px 16px;
               text-decoration: none;
               font-family: 'Inter', sans-serif;
@@ -41,15 +85,79 @@
             }
 
             nav a:hover {
-              color: #D65A7A;
+              color: #458658;
             }
 
+            .menu-toggle {
+                display: none;
+            }
+
+            .hamburger-label {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                padding: 10px;
+            }
+            
+            .hamburger-label span {
+              width: 28px;
+              height: 3px;
+              background: var(--nav-text);
+              border-radius: 2px;
+            }
+            /* tablet */
+            @media (max-width: 1024px) {
+                .nav-links {
+                  gap: 22px;
+                }
+                .nav-links a {
+                  font-size: 1.1rem;
+                }
+            }
+            /* mobile */
+            @media (max-width: 768px) {
+                .navbar {
+                  padding: 0 20px;
+                }
+             
+                .hamburger-label {
+                  display: flex;
+                }
+            
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: var(--nav-height);
+                left: 0;
+                right: 0;
+                background-color: var(--nav-green);
+                padding: 20px 30px;
+                gap: 20px;
+                z-index: 10;
+            }
+
+            .menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+            }
+        }
+        
             figure {
                 margin: 0;
             }
 
             figure img {
                 display: block;
+                width: 500px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 8px;
             }
 
             .content-wrapper {
@@ -59,11 +167,28 @@
                 gap: 20px;
                 min-height: calc(100vh - 100px);
                 box-sizing: border-box;
+                flex-direction: row;
             }
 
             .text-content {
-                align-items: center;
+                max-width: 600px;
             }
+            /* tablet and mobile*/
+            @media (max-width: 1024px) {
+                .content-wrapper {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 40px 20px;
+                }
+
+                figure img {
+                    width: 90vw;
+                    max-width: 500px;
+                    height: auto;
+                    aspect-ratio: 1 / 1;
+                }
+            }
+
             
             .box-container {
                 display: flex;
@@ -75,11 +200,10 @@
             .box {
                 width: 300px;
                 padding: 20px;
-                background-color: #FFFFFF;
+                background-color: #F7D6E0;
                 border-radius: 5px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 text-align: center;
-                align-items: stretch
             }
 
             .section {
@@ -92,7 +216,7 @@
                 max-width: 1400px; 
                 font-size: 1.3rem; 
                 border-collapse: collapse;
-                background-color: #FFFFFF;
+                background-color: #F7D6E0;
                 border-collapse: collapse;
             }
 
@@ -107,34 +231,67 @@
                 text-align: center;
             }
 
+            .table-wrapper {
+                overflow-x: auto;
+            }
+            
+            @media (max-width: 768px) {
+                table {
+                    font-size: 0.9rem;
+                }
+                th, td {
+                    padding: 12px;
+                }
+            }
+
             .form-question {
                 width: 400px;
                 margin: 20px auto;
                 text-align: left;
-                background-color:#FFFFFF;
+                background-color:#F4EEE8;
                 padding: 20px;
                 border-radius: 5px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
-            </style>
-    </head>
-    <body>
 
-        <nav>
-          <ul>
-             <li><a href="index.html">Products</a></li>
-             <li><a href="about.html">About Us</a></li>
-             <li><a href="contact.html">Contact</a></li>
-             <li><a href="careers.html">Careers</a></li>
-             <li><a href="locations.html">Locations</a></li>
-             <li><a href="events.html">Events</a></li>
+            .form-question textarea,
+            .form-question select,
+            .form-question input[type="text"],
+            .form-question input[type="email"],
+            .form-question input[type="tel"] {
+                width: 100%;
+                box-sizing: border-box;
+                font-family: inherit;
+                font-size: 1rem;
+                padding: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+          <img src="image1.png" alt="Yumora logo" class="logo">
+          <input type="checkbox" id="menuToggle" class="menu-toggle">
+
+          <ul class="nav-links">
+              <li><a href="index.html">Index</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="About-Us.html">About Us</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Locations.html">Locations</a></li>
+              <li><a href="EventPage.html">Events</a></li>
           </ul>
+          <label for="menuToggle" class="hamburger-label" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
         </nav>
 
         <div class="content-wrapper">
             <figure>
                 <img src="images/dried-yoghurt-bowl.jpg" 
-                alt="dried yoghurt in a bowl" width="500" height="500">
+                alt="dried yoghurt in a bowl">
             </figure>
             
             <div class="text-content">
@@ -144,6 +301,7 @@
         </div>
 
         <section class="section">
+            <div class="table-wrapper">
             <table>
                 <tr>
                     <th>Job Positions</th>
@@ -166,6 +324,7 @@
                 <td>$2000</td>
             </tr>
         </table>
+        </div>
         </section>
 
         <section class="section">
@@ -192,20 +351,20 @@
         
     <section class="section">
         <h2>Application Form</h2>
-        <form action="thankyou.html" method="get">
+        <form action="thanku.html" method="get">
             <div class="form-question">
             <label for="custname">Name:</label><br>
-            <input type="text" id="custname" name="custname" size="30" 
+            <input type="text" id="custname" name="custname" 
             placeholder="e.g.,Lim Wee" required>
             <br><br>
             
             <label for="custemail">Email:</label><br>
-            <input type="email" id="custemail" name="custemail" size="30"
+            <input type="email" id="custemail" name="custemail"
             placeholder="e.g.,limwee@email.com" required>
             <br><br>
     
             <label for="custphone">Phone Number:</label><br>
-            <input type="tel" id="custphone" name="custphone" size="30"
+            <input type="tel" id="custphone" name="custphone"
             placeholder="e.g.,0123456789" required>
             <br><br>
             
@@ -227,7 +386,7 @@
         <br><br>
         
         <label for="q3">Do you have any previous work experience?</label><br>
-        <textarea id="q3" name="q3" rows="5" cols="50" placeholder="Please describe your work experience here..." required></textarea>
+        <textarea id="q3" name="q3" rows="5" placeholder="Please describe your work experience here..." required></textarea>
         <br><br>
         
         <label for="q4">Do you have a food and hygiene certificate?</label><br>
@@ -238,7 +397,7 @@
         <br><br>
 
         <label for="q5">How long can you commit to working here?</label><br>
-        <textarea id="q5" name="q5" rows="5" cols="50" placeholder="How many months can you work here?" required></textarea>
+        <textarea id="q5" name="q5" rows="5" placeholder="How many months can you work here?" required></textarea>
         <br><br>
 
         <label for="q6">We require service crew to work for a minimum of 3 months, 2 times a week.
