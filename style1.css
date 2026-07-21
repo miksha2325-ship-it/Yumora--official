@@ -64,13 +64,13 @@ nav a:hover {
 }
 
 .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("2024-10-17-17-54-03");
-            height: 100%;
-            background-position: center;
-            Background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-           }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/2024-10-17-17-54-03.jpg");
+    height: 400px;   /* or 60vh, or whatever size you want */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .hero-text {
             text-align: center;
