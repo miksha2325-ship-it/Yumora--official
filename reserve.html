@@ -1,5 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
-    <body></body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserve Your Spot / Yumora</title>
+    <link href="styles.css">
+   <link href="...family=Playfair+Display:wght@600;700&family=Inter:wght@400;500...">
+    </head>
+    <body>
+ <nav>
+        <div class="nav-container">
+            <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Careers.html">Career</a></li>
+                <li><a href="contact.html">Locations</a></li>
+                <li><a href="EventPage.html">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+    </body>
+<div class="site-header">YUMORA</div>
+<main>
+    <div class="form card">
+        <h2>Reserve Your Spot Now</h2>
+        <p class="subtitle">Fill Your details below and we'll confirm your spot.</p>
+        <label for="name">Full name</label>
+<input type="text" id="name" name="Name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="Email" required>
+
+<label for="phone">Phone number</label>
+<input type="tel" id="phone" name="Phone">
+
+<label for="event">Event</label>
+<select id="event" name="Event">
+  <option>Tasting Flight</option>
+  <option>Craft your own bowls with cute little animals</option>
+  <option>Learning to pick the fruits the fresh way!</option>
+</select>
+
+<label for="guests">Number of guests</label>
+<input type="number" id="guests" name="Guests" min="1" value="1">
+
+<label for="notes">Notes</label>
+<textarea id="notes" name="Notes" placeholder="Any special requests"></textarea>
+
+<a href="thankyu.html" class="reserve-btn">Reserve</a>
+    </form>
+  </div>
+</main>
+</body>
 </html>
