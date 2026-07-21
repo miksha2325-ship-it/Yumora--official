@@ -5,47 +5,12 @@
 }
 
 body {
-    background-color: #FFF8EF; 
+    background-color: #f5e8df; 
     font-family: 'Inter', sans-serif;
 }
 
 nav {
-    background-color: #97caa9; 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 0 30px;
-}
-
-.logo {
-    height: 80px; 
-    width: 80px;
-    border-radius: 50%;
-    background: #f3f0e6;
-    border: 2px solid #97caa9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 12px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #FFF8EF; 
-    font-family: 'Inter', sans-serif;
-}
-
-nav {
-    background-color: #97caa9; 
+    background-color: #6e3146; 
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
@@ -78,12 +43,58 @@ nav ul {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+
 nav li {
     display: inline-block;
 }
 
 nav a {
-    color: #4a4a4a;
+    color: #f9f5f5;
     padding: 8px 12px;
     text-decoration: none;
     font-size: 15px;
@@ -93,7 +104,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #131212;
+    color: #eacad2;
     text-decoration: underline;
 }
 
@@ -114,6 +125,11 @@ nav a:hover {
             transform: translate(-50%, -50%);
             color: white;
            }
+
+.hero-text p {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
 
 .fade-slider {
     position: relative;
