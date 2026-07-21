@@ -60,32 +60,22 @@ nav ul {
     }
 }
 
-@media (max-width: 480px) {
+@@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
     nav ul {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        gap: 12px;
+        margin-top: 15px;
+        width: 100%;
     }
 
     .logo {
         height: 60px;
         width: 60px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-image {
-        height: 250px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-text p {
-        font-size: 14px;
     }
 }
 
