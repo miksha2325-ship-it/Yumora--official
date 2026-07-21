@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #FFF8EF; 
+    background-color: #f5e8df; 
     font-family: 'Inter', sans-serif;
 }
 
 nav {
-    background-color: #97caa9; 
+    background-color: rgb(110, 49, 70); 
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
@@ -24,7 +24,7 @@ nav {
     width: 80px;
     border-radius: 50%;
     background: #f3f0e6;
-    border: 2px solid #97caa9;
+    border: 2px solid #f5e8df;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ nav li {
 }
 
 nav a {
-    color: #4a4a4a;
+    color: #f3f0e6;
     padding: 8px 12px;
     text-decoration: none;
     font-size: 15px;
@@ -59,13 +59,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #131212;
+    color: #eacad2;
     text-decoration: underline;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/2024-10-17-17-54-03.jpg");
-    height: 400px;   /* or 60vh, or whatever size you want */
+    background-image: linear-gradient(rgba(30, 61, 46, 0.55), rgba(30, 61, 46, 0.55)), url("images/2024-10-17-17-54-03.jpg");
+    height: 400px;   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +79,7 @@ nav a:hover {
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-           }
+}
 
 .fade-slider {
     position: relative;
