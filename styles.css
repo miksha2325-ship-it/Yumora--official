@@ -10,15 +10,14 @@ body {
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    background-color: #6e3146; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 30px;
 }
-nav {
-    display: block;
-    unicode-bidi: isolate;
-}
+
 .logo {
     height: 80px; 
     width: 80px;
@@ -33,38 +32,91 @@ nav {
     text-align: center;
     flex-shrink: 0;
 }
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(110, 49, 70);
-    padding: 10px 10px;
-}
+
 nav ul {
     list-style-type: none;
-    background-color: rgb(110, 49, 70);
-    padding: 20px 20px;
+    padding: 0;
     margin: 0;
-    width: 100%;
-    box-sizing: border-box;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
 }
- nav li {
-    display: inline-block;
-    margin-right: 14px;
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.hero-text h1 {
+        font-size: 32px;
+    }
 }
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #f5e8df;
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+.logo {
+        height: 60px;
+        width: 60px;
+        flex-shrink: 0;
+        flex-basis: 60px;
+    }
+
+nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+nav li {
+        text-align: left;
+    }
+
 nav a {
-    color: #f5e8df;
-    padding: 8px 16px;
+        color: #6E3146;
+    }
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #f9f5f5;
+    padding: 8px 12px;
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 1px;
-    }
-nav a:hover { color: #D65A7A;}
-    body, html {
-    height: 100%;
-           }
+}
+
+nav a:hover {
+    color: #eacad2;
+    text-decoration: underline;
+}
+
 html, body {
     height: 100%;
 }
@@ -81,7 +133,7 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    bottom: 50%;
+    bottom: 30%;
     transform: translate(-50%, -50%);
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
@@ -104,7 +156,7 @@ html {
     scroll-behavior: smooth;
 }
 .events {
- padding-top: 80px;
+ padding-top: 70px;
 }
 .events-header {
     width: 100%

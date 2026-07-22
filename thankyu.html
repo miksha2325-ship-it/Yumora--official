@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-       <link rel="stylesheet" href="styles.css">
-        <title>Reservation</title>
-    </head>
-    <body>     
-        <h1>Reservation Form Subitted</h1>
-        <div></div>
-        <p>Thank you for your reserving!</p>
-        <div></div>
-        <p>We will update on your spot shortly.</p>
-        
-        
-    </body>
-</html> 
+<head>
+<meta charset="UTF-8">
+<title>Yumora — Reservation Submitted</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+  :root{
+    --maroon: #6f2340;
+    --maroon-deep: #4c1729;
+    --gold: #c8a86b;
+    --cream: #f6efe2;
+    --ink: #2c211c;
+  }
+  *{ box-sizing: border-box; }
+
+  body{
+    margin:0;
+     min-height:100vh; 
+     display:flex; 
+     align-items:center; 
+     justify-content:center;
+    background: radial-gradient(circle at 20% 20%, rgba(200,168,107,0.15), 
+    transparent 45%), 
+    var(--cream);
+    font-family:'Cormorant Garamond', serif; color: var(--ink); padding: 40px 20px;
+  }
+
+  .card{
+    position:relative; 
+    width:100%;
+    max-width:460px;
+    background:#fffdf8;
+    border:1px solid rgba(111,35,64,0.15);
+    border-radius:4px;
+    box-shadow: 0 30px 60px -20px rgba(76,23,41,0.25); 
+    overflow:hidden; 
+    text-align:center;
+  }
+.inner{ padding: 56px 44px 48px; }
+
+  .seal{
+    width:84px;
+     height:84px; 
+     margin:0 
+     auto 24px; 
+     border:2px 
+     solid var(--gold);
+    border-radius:50%; 
+    display:flex;
+    align-items:center; 
+    justify-content:center;
+    position:relative;
+  }
+  .seal::before{ content:""; position:absolute; inset:6px;
+    border:1px solid rgba(200,168,107,0.5); border-radius:50%; }
+    
+  .seal svg{ width:34px; height:34px; stroke: var(--maroon); }
+  .eyebrow{
+    letter-spacing:0.25em; 
+    text-transform:uppercase; 
+    font-size:12px; color:var(--gold);
+    margin:0 0 8px; 
+    font-weight:600;
+  }
+
+  h1{ font-family:'Playfair Display', serif; font-size:30px; color:var(--maroon-deep); margin:0 0 14px; }
+
+  .sub{ font-size:18px; color:#6b5b52; margin:0 0 30px; line-height:1.6; }
+
+  .email-note{
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    background:var(--cream); border:1px solid rgba(111,35,64,0.15); border-radius:3px;
+    padding:14px 18px; font-size:16px; color:var(--maroon-deep);
+  }
+  .email-note svg{ width:18px; height:18px; stroke:var(--maroon); flex-shrink:0; }
+
+  .back{
+    display:inline-block; margin-top:34px; padding:14px 30px; background:var(--maroon);
+    color:var(--cream); text-decoration:none; border-radius:2px; font-size:16px;
+    letter-spacing:0.08em; text-transform:uppercase; transition: background 0.2s ease;
+  }
+  .back:hover{ background: var(--maroon-deep); }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="inner">
+
+      <div class="seal">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="4 12 10 18 20 6"></polyline>
+        </svg>
+      </div>
+
+      <p class="eyebrow">Reservation Confirmed</p>
+      <h1>Your Request Has Been Submitted</h1>
+      <p class="sub">Thank you for reserving with Yumora. We've received your details and are getting things ready.</p>
+
+      <div class="email-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v16H4z"></path>
+          <path d="M4 4l8 9 8-9"></path>
+        </svg>
+        A confirmation has been sent to your email
+      </div>
+
+      <a href="EventPage.html" class="back">Back to Homepage</a>
+
+    </div>
+  </div>
+
+</body>
+</html>
