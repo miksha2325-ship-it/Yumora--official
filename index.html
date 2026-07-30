@@ -8,8 +8,14 @@
 <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-   <nav>
-       <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+    <nav class="navbar">
+    <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+   <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
       <ul>
         <li><a href="index.html">Homepage</a></li>
@@ -21,20 +27,57 @@
          <li><a href="EventPage.html">Events</a></li>
       </ul>
    </nav>
-   
 
-<div class="hero-image">
-        <div class="hero-text">
-            <h1>YUMORA</h1>
-            <p>Customized to your liking.</p>
-        </div>
+ <div class="hero-image">
+    <img src="images/2024-10-17-17.54.03.jpg" alt="dried yogurt bowl" class="hero-slide slide1">
+    <img src="images/2024-10-17-17.54.06.jpg" alt="dried yogurt in a bowl" class="hero-slide slide2">
+    <img src="images/2024-10-17-17.54.11.jpg" alt="blueberry dried yogurt bowl" class="hero-slide slide3">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1>YUMORA</h1>
+        <p>Customized to your liking.</p>
     </div>
+</div>
 
- <div class="fade-slider">
-   <img src="images/2024-10-17-17-54-03.jpg" alt="dried yogurt bowl" class="active">
-   <img src="images/dried-yoghurt-bowl.jpg" alt="dried yogurt in a bowl">
-   <img src="images/image(1).jpg" alt="blueberry dried yogurt bowl">
- </div>
+<section class="about-section">
+    <div class="about-text">
+       <h2>About Us</h2>
+        <p>Description of our story. How Yumora came about.</p>
+        <a href="About Us.html" class="btn-pill">More about our story</a>
+    </div>
+    <div class="about-image">
+        <img src="images/YOUR-IMAGE.jpg" alt="about us photo">
+    </div>
+</section>
+
+<section class="about-section reverse">
+    <div class="about-image">
+        <img src="images/YOUR-TEAM-IMAGE.jpg" alt="the team photo">
+    </div>
+    <div class="about-text">
+        <h2>The Team</h2>
+        <p>Description about the Founders. About our Team.</p>
+        <a href="career.html" class="btn-pill">Join Us!</a>
+    </div>
+</section>
+
+<section class="ingredients-section">
+    <div class="image-grid">
+    <div class="grid-piece piece1"></div>
+    <div class="grid-piece piece2"></div>
+    <div class="grid-piece piece3"></div>
+    <div class="grid-piece piece4"></div>
+    <div class="grid-piece piece5"></div>
+    <div class="grid-piece piece6"></div>
+    <div class="grid-piece piece7"></div>
+    <div class="grid-piece piece8"></div>
+    <div class="grid-piece piece9"></div>
+</div>
+    <div class="ingredients-text">
+        <h2>Our ingredients</h2>
+        <p>Some fancy word or summary of the making.</p>
+    </div>
+</section>
 
 </body>
 </html>
