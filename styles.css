@@ -36,7 +36,6 @@ body {
     width: 80px;
     border-radius: 50%;
     background: #f3f0e6;
-    border: 2px solid #97caa9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +192,7 @@ html {
     
 .event-card {
     background: #fdf8f0;
-    border: 1px solid #c98b9e;
+    border: 1px solid #e5d9c3;
     border-radius: 10px;
     padding: 28px;
     flex: 1 1 260px;
