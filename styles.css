@@ -3,24 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #f5e8df; 
+    font-family: 'Inter', sans-serif;
+}
+
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    background-color: #6e3146; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 30px;
 }
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    padding: 10px 10px;
-}
+
 .logo {
-    height: 80px;
+    height: 80px; 
     width: 80px;
     border-radius: 50%;
     background: #f3f0e6;
+    border: 2px solid #97caa9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,24 +32,89 @@ nav {
     text-align: center;
     flex-shrink: 0;
 }
+
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+.hero-text h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: #f5e8df;
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+.logo {
+        height: 60px;
+        width: 60px;
+        flex-shrink: 0;
+        flex-basis: 60px;
+    }
+
+nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+nav li {
+        text-align: left;
+    }
+
+nav a {
+        color: #6E3146;
+    }
+}
+
 nav li {
     display: inline-block;
-    margin-right: 14px;
 }
+
 nav a {
-    color: rgb(110, 49, 70);
-    padding: 8px 16px;
+    color: #f9f5f5;
+    padding: 8px 12px;
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+
 nav a:hover {
-    color: #D65A7A;
+    color: #eacad2;
+    text-decoration: underline;
 }
 
 html, body {
@@ -65,19 +133,20 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    bottom: 50%;
+    bottom: 30%;
     transform: translate(-50%, -50%);
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     font-style: normal;
     color: white;
-    .yay {
+ .yay {
         font-style: italic;
      }
 }
 button {
-    background-color: #d7403f;
+    background-color:rgb(110, 49, 70);
     color: white;
+    font-style: bold;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -87,8 +156,21 @@ html {
     scroll-behavior: smooth;
 }
 .events {
-    padding: 72px 0 40 px;
-    scroll-margin-top: 90px;
+ padding-top: 70px;
+}
+.events-header {
+    width: 100%
+}
+.events-intro {
+    text-align:center;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
 }
 .wrap {
     display: flex;
@@ -105,7 +187,7 @@ html {
     
 .event-card {
     background: #fdf8f0;
-    border: 1px solid #e5d9c3;
+    border: 1px solid #c98b9e;
     border-radius: 10px;
     padding: 28px;
     flex: 1 1 260px;
@@ -113,7 +195,7 @@ html {
 }
 .reserve-btn {
   display: inline-block;
-  background: #d9534f;
+  background: rgb(110, 49, 70);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -124,4 +206,56 @@ html {
   font-family: 'Playfair Display', serif;
   color: #7a1f2b;
   margin-bottom: 10px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #f5e8d4;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+.form-card {
+  background: #fdf8f0;
+  border: 1px solid #e6dcc8;
+  border-radius: 10px;
+  padding: 36px;
+  max-width: 440px;
+  width: 100%;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #7a1f2b;
+}
+.subtitle {
+  color: #6b6258;
+  font-size: 14px;
+}
+label {
+  display: block;
+  margin-top: 16px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8cfc0;
+  border-radius: 6px;
+}
+button {
+  background: rgb(110, 49, 70);
+  color: #ffffff;
+  padding: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #601722;
+  body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #ffffff; }
 }
