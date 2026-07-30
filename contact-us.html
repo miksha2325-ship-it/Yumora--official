@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Reserve Your Spot / Yumora</title>
+    <title>Contact Us</title>
    <link href="...family=Playfair+Display:wght@600;700&family=Inter:wght@400;500...">
-    </head>
-    <body>
- <nav>
+   <link rel="icon" href="images/Yumora Logo.png" type="image/png">
+</head>
+<body>
+    <input type="checkbox" id="menuToggle">
+    <nav>
             <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
             <ul>
                 <li><a href="index.html">Homepage</a></li>
@@ -20,38 +22,39 @@
                 <li><a href="contact.html">Locations</a></li>
                 <li><a href="EventPage.html">Events</a></li>
             </ul>
+            <label class="menu-btn" for="menuToggle">
+                <span></span><span></span><span></span>
+            </label>
     </nav>
-    </body>
-<main>
-    <div class="form card">
-        <h2>Contact Us!</h2>
-        <p class="subtitle">Fill Your details below and we'll confirm your spot.</p>
-        <label for="name">Full name</label>
-<input type="text" id="name" name="Name" required>
+    <section class="contact-hero">
+        <h1>Contact</h1>
+        <div class="accent-line"></div>
+        <p>Connect with us</p>
+    </section>
 
-<label for="email">Email</label>
-<input type="email" id="email" name="Email" required>
-
-<label for="phone">Phone number</label>
-<input type="tel" id="phone" name="Phone">
-
-<label for="event">Event</label>
-<select id="event" name="Event">
-  <option>Tasting Flight</option>
-  <option>Craft your own bowls with cute little animals</option>
-  <option>Learning to pick the fruits the fresh way!</option>
-</select>
-
-<label for="guests">Number of guests</label>
-<input type="number" id="guests" name="Guests" min="1" value="1">
-
-<label for="notes">Notes</label>
-<textarea id="notes" name="Notes" placeholder="Any special requests"></textarea>
-
-<a href="thankyu.html" class="reserve-btn">Reserve</a>
-    </form>
-  </div>
-</main>
+    <div class="contact-hero">
+        <div class="info-card">
+            <h3>Let's connect</h3>
+             <div class="info-item">🕐 <strong>Business Hours</strong> Mon&ndash;Sat, 9am&ndash;7pm</div>
+              <div class="info-item">✉️ <strong>Email</strong> hello@yumora.com</div>
+      <div class="info-item">📞 <strong>Phone</strong> (+65) 1234 5678</div>
+      <div class="info-item">📍 <strong>Location</strong> 123 Bowl Street, Singapore</div>
+        </div>
+        
+        <div class="hello">
+            <form class="wrath">
+                <input type="text" placeholder="Name" required>
+                <div class="row">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Contact" required>
+                </div>
+                <textarea id="Reasons" name="Reasons/Contents" placeholder="Reasons/Contents" ></textarea>
+                 <button class="hehe">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+    <p class="thank-you">Thank you for sharing.<br>We will be in touch as soon as possible!</p>
+    <footer>&copy; 2026 Yumora &mdash; ALL RIGHTS RESERVED</footer>
 </body>
 </html>
-
