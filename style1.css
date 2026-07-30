@@ -244,13 +244,17 @@ nav a:hover {
 }
 
 .about-section {
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
     padding: 60px 80px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
 }
 
 .about-text {
