@@ -1,0 +1,403 @@
+/* Aryssa Haiza Binte Hairulnizam 261382F */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+  background: #f5e8df; 
+  font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #6e3146; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 30px;
+}
+
+.logo {
+    height: 80px; 
+    width: 80px;
+    border-radius: 50%;
+    background: #f3f0e6;
+    border: 2px solid #97caa9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #f9f5f5;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #eacad2;
+    text-decoration: underline;
+}
+
+  .buttons {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 20px;             
+    flex-wrap: wrap;          
+    margin: 30px auto;
+}
+
+.buttons input[type="button"] {
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrap{
+display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.wrap h2 {
+    width: 90%;
+}
+
+.card {
+    width: 220px;
+    min-height: 300px;
+    padding: 20px;
+    background-color:#fdf8f0;
+    border: 2px solid #C98B9E;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    margin: 0;          
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+}
+
+.products {
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.product-card {
+    background: #fdf8f0;
+    border: 1px solid #c98b9e;
+    border-radius: 10px;
+    padding: 28px;
+    flex: 1 1 260px;
+    text-align: left;
+}
+
+.product-card h2 {
+  font-family: 'Playfair Display', serif;
+  color: #7a1f2b;
+  margin-bottom: 10px;
+}
+
+img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.reserve-btn {
+  display: inline-block;
+  background: rgb(110, 49, 70);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="button"][value="Order Now"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.container { 
+    width:100%;
+}
+.corner-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+ 
+
+.buttons input[type="button"] {
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h1 {
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+    color: #3D1F2B;
+}
+
+h2{
+    text-decoration: none;
+    font-family:"playfair display;"
+}
+
+h3 {
+    text-decoration: none;
+    font-family:"playfair display";
+    text-align: center;
+}
+
+#special-note {
+    text-decoration: underline;
+}
+
+#dotted-note {
+    text-decoration: underline dotted;
+}
+
+h1 {
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+    color: #3D1F2B;
+}
+
+h2{
+    text-decoration: none;
+    font-family:"playfair display;"
+}
+
+#special-note {
+    text-decoration: underline;
+}
+
+#dotted-note {
+    text-decoration: underline wavy ;
+}
+
+.size-card{
+    width: 900px;
+    max-width: 90%;
+    margin: 40px auto;
+
+    background: #fdf8f0;
+    border: 2px solid #C98B9E;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+.size-card h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-decoration:underline ;
+}
+
+.size-list{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.form-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.form-box{
+     width:600px;
+    max-width:90%;
+    background:white;
+    padding:40px;
+    border:2px solid #C98B9E;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+input[type="button"][value="Submit"] {
+  width: 100%;         
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;        
+}
+
+.thank-you-body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7ede2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thank-you-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.checkmark-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.thank-you-card h1 {
+  color: #333333;
+  margin: 0 0 12px 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+.message {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.btn-home {
+  display: inline-block;
+  background-color: #4a2c2a;
+  color: #ffffff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-home:hover {
+  background-color: #633c39;
+  transform: translateY(-2px);
+}
