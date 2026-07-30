@@ -4,70 +4,67 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yumora</title>
-   <style>
-     
-   body { 
-      background-color: #FFCEC8; 
-   }
-
-   nav ul { 
-      list-style-type: none;
-      background-color: #FFFFFF;
-      padding: 20px 10px;
-      margin: 0;
-      width: 100%;
-      box-sizing: border-box;
-   }
-
-nav li  {
-   display: inline-block; margin-right: 14px; 
-}
-
-nav a  { 
-   color: rgb(110, 49, 70);
-   padding: 8px 16px;
-   text-decoration: none;
-   font-family: 'Inter', sans-serif;
-   font-size: 15px;
-   font-weight: 600;
-   text-transform: capitalize;
-   letter-spacing: 1px;
-}
-
-nav a:hover {
-   color: #D65A7A;
-}
-
-  </style>
+<link rel="icon" href="images/Yumora Logo.png" type="image/png">
+<link rel="stylesheet" href="style1.css" type="text/css">
 </head>
 <body>
-   <nav>
-       <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+    <nav class="navbar">
+    <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+   <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
       <ul>
         <li><a href="index.html">Homepage</a></li>
          <li><a href="Product Page.html">Products</a></li>
          <li><a href="About-Us.html">About Us</a></li>
-         <li><a href="contact.html">Contact</a></li>
+         <li><a href="contact-us.html">Contact</a></li>
          <li><a href="Careers.html">Recruit</a></li>
          <li><a href="locations.html">Locations</a></li>
          <li><a href="EventPage.html">Events</a></li>
       </ul>
    </nav>
-   
 
-<div class="hero-image">
-        <div class="hero-text">
-            <h1>YUMORA</h1>
-            <p>Customized to your liking.</p>
-        </div>
+ <div class="hero-image">
+    <img src="images/2024-10-17-17.54.03.jpg" alt="dried yogurt bowl" class="hero-slide slide1">
+    <img src="images/2024-10-17-17.54.06.jpg" alt="dried yogurt in a bowl" class="hero-slide slide2">
+    <img src="images/2024-10-17-17.54.11.jpg" alt="blueberry dried yogurt bowl" class="hero-slide slide3">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1>YUMORA</h1>
+        <p>Customized to your liking.</p>
+        <a href="Product Page.html" class="btn-pill">Order Now↗</a>
     </div>
+</div>
 
- <div class="fade-slider">
-   <img src="images/2024-10-17-17-54-03.jpg" alt="dried yogurt bowl" class="active">
-   <img src="images/dried-yoghurt-bowl.jpg" alt="dried yogurt in a bowl">
-   <img src="images/image(1).jpg" alt="blueberry dried yogurt bowl">
- </div>
+<section class="about-section">
+    <div class="about-text">
+       <h2>About Us</h2>
+        <p>Yumora is on a misson to make healthy snacks taste like a treat. We create affordable, delicious yogurt snacks so that good nutrition never has to be a luxury — just a happy part of everyday life.</p>
+        <a href="About-Us.html" class="btn-pill">Learn more about us</a>
+    </div>
+    <div class="about-image">
+        <img src="images/2024-10-17-17.53.57.jpg" alt="about us photo">
+    </div>
+</section>
+
+<section class="about-section reverse">
+    <div class="about-text">
+        <h2>The Team</h2>
+        <p>Yumora is built by a small, passionate crew who believe healthy snacking should be simple and affordable for everyone. We're hands-on at every step — and we're just getting started. Love food, yogurt, or building something new? We'd love to have you on the team!</p>
+        <a href="Careers.html" class="btn-pill">Join Us!</a>
+    </div>
+   <div class="team-grid">
+    <div class="team-piece team-piece1"></div>
+    <div class="team-piece team-piece2"></div>
+    <div class="team-piece team-piece3"></div>
+    <div class="team-piece team-piece4"></div>
+   </div>
+</section>
+
 
 </body>
 </html>
