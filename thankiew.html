@@ -18,27 +18,10 @@
     <h1>Order Confirmed!</h1>
     <p class="subtitle">Thank you for ordering with <strong>Yumora</strong>.</p>
     <p class="message">Your support means a lot to us, and we hope to see you soon!</p>
-    <script>
-      const data = new URLSearchParams (window.location.search);
-      const name = data.get ("custname") || "there"; 
-      const product = data.get ("size") || "your";
-      const location=data.get ("locations") || "munchies";
-      const datetime=data.get ("date") || "munchies"
-      const box = document.getElementById ("summary");
-      if (data.toString() != "") {
-        box.textContent = "Tip:submit the order form to see your order appear here.";
-      }
-      else {
-        box.textContent= 'Thanks $(name)! Your $(product) order is confirmed! Please go to $(locations) on (date)! See you there!'
-      }
 
-    </script>
-
-    <a href="index.html" class="btn-home">Back To Homepage</a>
-
+    
+    <a href="homepage.html " class="btn-home">Back To Homepage</a>
   </div>
-  </body>
-  </html>
 
 
 
