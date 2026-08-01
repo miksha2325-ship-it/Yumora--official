@@ -4,55 +4,52 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles5.css">
     <title>Reserve Your Spot / Yumora</title>
    <link href="...family=Playfair+Display:wght@600;700&family=Inter:wght@400;500...">
 <link rel="icon" href="images/Yumora Logo.png" type="image/png">
+    </head>
+<body class="Moksha">
     <input type="checkbox" id="menuToggle">
     <nav>
             <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
             <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="Product.html">Products</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact</a></li>
-                <li><a href="Careers.html">Career</a></li>
-                <li><a href="contact.html">Locations</a></li>
-                <li><a href="EventPage.html">Events</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="Careers.html">Career</a></li>
+            <li><a href="Product Page.html">Products</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="EventPage.html">Events</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
             </ul>
             <label class="menu-btn" for="menuToggle">
                 <span></span><span></span><span></span>
             </label>
     </nav>
 </head>
-<body>
 <main>
-    <form class="form card" action="thankyu.html" method="get">
-        <h2>Reserve Your Spot Now</h2>
+    <form class="form-card" action="thankyu.html" method="get">
+        <h2 class="mat">Reserve Your Spot Now</h2>
         <p class="subtitle">Fill Your details below and we'll confirm your spot.</p>
+        <div class="mop">
         <label for="name">Full name</label>
 <input type="text" id="name" name="Name" required>
-
 <label for="email">Email</label>
 <input type="email" id="email" name="Email" required>
-
-
 <label for="phone">Phone number</label>
 <input type="tel" id="phone" name="Phone" required>
-
 <label for="event">Event</label>
 <select id="event" name="Event" required>
   <option>Tasting Flight</option>
   <option>Craft your own bowls with cute little animals</option>
   <option>Learning to pick the fruits the fresh way!</option>
 </select>
-
 <label for="guests">Number of guests</label>
 <input type="number" id="guests" name="Guests" min="1" value="1">
-
 <label for="notes">Notes</label>
 <textarea id="notes" name="Notes" placeholder="Any special requests" ></textarea>
-<button type="submit" class="reserve-btn">Reserve</button>
+<button type="submit" class="tory">Reserve</button>
+</div>
     </form>
 </main>
 </body>
