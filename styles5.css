@@ -17,15 +17,16 @@
     --nav-maroon: rgb(110, 49, 70);
     --nav-text: #3D1F2B;
     --nav-height: 100px;
+    --background-color: #f5e8df;
   }
-  .Moksha{
-  margin: 0;
-  font-family: 'Inter', -apple-system, sans-serif;
-  background: #f5e8df;
+html {
+    background-color: var(--background-color);
 }
- 
-  #menuToggle{ display:none; }
- 
+.Moksha{
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+ #menuToggle {
+    display: none;}
   nav {
     background-color: #6e3146; 
     display: flex; 
@@ -462,7 +463,8 @@ footer{
     transition: background 0.2s ease;
   }
   .live:hover{ background: var(--maroon-deep); }
-  
+  /*End of Moksha*/
+  /*Yuru*/
 
 .hero-image-yr {
     position: relative;
@@ -820,6 +822,7 @@ h2 {
     color: #333;
     line-height: 1.5;
 }
+/*End of Yuru*/
 /*Arfa*/
 
  html {
@@ -966,8 +969,7 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-   
+} 
 /*Button that leads to application form*/
 
 
@@ -1000,8 +1002,6 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Playfair Display', serif;
 }
-
-
 .arfaform textarea,
 .arfaform select,
 .arfaform input[type="text"],
@@ -1041,7 +1041,6 @@ h2 {
 .arfaform .arfa-form-btn {
     text-align: center;
 }
-
 
 /*Banner for about us page*/
 .arfa-hero-image {

@@ -4,16 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Careers</title>
+        <title>Application</title>
+        <link rel="icon" href="images/Yumora Logo.png" type="image/png">
         <link rel="stylesheet" href="styles5.css">
     </head>
-
-    <body>
-        <nav class="navbar">
-          <img src="images/Yumora Logo.png" alt="Yumora logo" class="logo">
-          <input type="checkbox" id="menuToggle" class="menu-toggle">
-
-          <ul class="nav-links">
+    <!--I learnt how to code the arfapage body class from Claude AI.-->
+        <body class="Moksha">
+        <nav>
+            <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+            <ul>
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="About-Us.html">About Us</a></li>
                 <li><a href="Careers.html">Career</a></li>
@@ -21,33 +20,38 @@
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="EventPage.html">Events</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
-          </ul>
-         
-          <label for="menuToggle" class="hamburger-label" aria-label="Toggle menu">
-              <span></span>
-              <span></span>
-              <span></span>
+            </ul>
+            <label class="menu-btn" for="menuToggle">
+                <span></span><span></span><span></span>
             </label>
-        </nav>
+    </nav>
+        <div class="demo"></div>
+        </body>
+<body class="arfapage">
 
-        <h2>Application Form</h2>
-        <form action="thanku.html" method="get">
-            <div class="form-question">
+        <!--I learnt how to code most of this form from the slides.
+        For the last 3 questions, I learnt how to put the text box where you type ur answers
+        and the radio input questions from Claude AI-->
+        <section class="arfa-section">
+        
+    <form class="arfaform" action="thanku.html" method="get">
+       <h2>Application Form</h2>
+       <div class="form-question">
             <label for="custname">Name:</label><br>
-            <input type="text" id="custname" name="custname" 
+            <input type="text" id="custname" name="custname"
             placeholder="your full name" required>
             <br><br>
-            
+           
             <label for="custemail">Email:</label><br>
             <input type="email" id="custemail" name="custemail"
             placeholder="e.g.,limwee@email.com" required>
             <br><br>
-    
+   
             <label for="custphone">Phone Number:</label><br>
             <input type="tel" id="custphone" name="custphone"
             placeholder="e.g.,0123456789" required>
             <br><br>
-            
+           
             <label for="q1">Do you want to work full-time or part-time?</label><br>
             <select id="q1" name="q1" required>
                 <option value="">Select an option</option>
@@ -55,7 +59,7 @@
                 <option value="Part-time">Part-time</option>
             </select>
             <br><br>
-            
+           
             <label for="q2">Which job position do you want?</label><br>
             <select id="q2" name="q2" required>
                 <option value="">Select a position</option>
@@ -64,30 +68,39 @@
                 <option value="Service Crew">Service Crew</option>
             </select>
             <br><br>
-            
+           
             <label for="q3">Do you have any previous work experience?</label><br>
             <textarea id="q3" name="q3" rows="5" placeholder="Please describe your work experience here..." required></textarea>
             <br><br>
-            
+           
             <label for="q4">Do you have a food and hygiene certificate?</label><br>
             <input type="radio" id="yes" name="q4" value="Yes" required>
             <label for="yes">Yes</label><br>
             <input type="radio" id="no" name="q4" value="No">
             <label for="no">No</label>
             <br><br>
-            
+           
             <label for="q5">How long can you commit to working here?</label><br>
             <textarea id="q5" name="q5" rows="5" placeholder="How many months can you work here?" required></textarea>
             <br><br>
-    
+   
             <label for="q6">We require service crew to work for a minimum of 3 months, 2 times a week.
-               <br> Will you be able to commit to this requirement?</label><br>
+            <br> Will you be able to commit to this requirement?</label><br>
             <input type="radio" id="yes2" name="q6" value="Yes" required>
             <label for="yes2">Yes</label><br>
-            </div>
-        
+           
+            <br>
+
+
+            <!--I learnt how to code the arfa form buttons from Claude AI.-->
+            <div class="arfa-form-btn">
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
-        </form>
-        </body>
+            </div>
+
+
+        </div>
+    </form>
+    </section>
+</body>
 </html>
