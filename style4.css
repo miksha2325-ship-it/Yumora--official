@@ -1,32 +1,42 @@
-/* Aryssa Haiza Binte Hairulnizam 261382F */
-
+ /*Name:Moksha,Admin Number:261274N*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    margin:0;
-  background: #f5e8df; 
-  font-family: Arial, sans-serif;
+:root{
+    --maroon: #6e3146;
+    --maroon-deep: #4c1729;
+    --gold: #f2cf84;
+    --cream: #f6efe2;
+    --ink: #2c211c;
+    --pink: #eacad2;
+  }
+  .Moksha{
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #f5e8df;
 }
-
-nav {
-    background-color: #6e3146; 
-    display: flex; 
-    align-items: center; 
+  * { box-sizing: border-box; }
+ 
+  #menuToggle{ display:none; }
+ 
+  nav {
+    background-color: #6e3146;
+    position: fixed;
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
     gap: 10px;
     padding: 0 30px;
+    position: relative;
+    z-index: 100;
 }
-
-.logo {
-    height: 80px; 
-    width: 80px;
+ .logo {
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background: #f3f0e6;
-    border: 2px solid #97caa9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,80 +46,87 @@ nav {
     flex-shrink: 0;
 }
 
-nav ul {
+
+ 
+  nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     justify-content: space-between;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-
-nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .logo {
-        height: 60px;
-        width: 60px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-image {
-        height: 250px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-text p {
-        font-size: 14px;
-    }
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
+  }
+  nav a {
     color: #f9f5f5;
-    padding: 8px 12px;
     text-decoration: none;
+    padding: 8px 12px;
     font-size: 15px;
     font-weight: 600;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-
+  }
+ 
 nav a:hover {
     color: #eacad2;
     text-decoration: underline;
 }
+ 
+  /* hamburger icon, hidden until mobile breakpoint */
+  .menu-btn{
+    margin-left: auto;
+    display:none;
+    cursor:pointer;
+    flex-direction:column;
+    gap:5px;
+  }
+  .menu-btn span{
+    width:26px;
+    height:2px;
+    background:#f9f5f5;
+    display:block;
+    transition: all 0.25s ease;
+  }
+ 
+  /* ============ MOBILE ============ */
+  @media (max-width: 768px) {
+ 
+    .menu-btn{ display:flex; }
+ 
+    nav ul {
+      display: none;              
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: var(--maroon);
+      padding: 15px;
+      gap: 15px;
+    }
+ 
+    nav a{
+      color: var(--pink);
+      text-transform: capitalize;
+      gap: 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;   /* centers each item horizontally */
+      text-align: center;
+    }
+ 
+    /* when checkbox is checked, reveal the menu + animate icon into an X */
+    #menuToggle:checked ~ nav ul{ display: flex; }
+ 
+    #menuToggle:checked ~ nav .menu-btn span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+    #menuToggle:checked ~ nav .menu-btn span:nth-child(2){ opacity:0; }
+    #menuToggle:checked ~ nav .menu-btn span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+  }
+ 
+  /* demo content so you can see the nav in context */
+  .demo{ display:flex; align-items:center; justify-content:center; font-size:24px; color:#4c1729; }
+html, body {
+    height: 100%;
+}
+
+
 
   .buttons {
     display: flex;
@@ -201,8 +218,7 @@ img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
   border-radius: 4px;
   font-size: 14px;
 }
-
-input[type="button"][value="Order Now"] {
+.aryssa-submit {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -225,7 +241,7 @@ input[type="button"][value="Order Now"] {
 }
  
 
-.buttons input[type="button"] {
+.product-buttons input[type="button"] {
     font-size: 18px;
     padding: 15px 30px;
     border-radius: 10px;
@@ -237,12 +253,12 @@ input[type="button"][value="Order Now"] {
     text-align: center;
     font-size:large;
 }
-.panda {
-    text-decoration: none;
-}
 .ary{
     text-decoration:none;
     font-family:"playfair display;"
+}
+.panda {
+    text-decoration: none;
 }
 
 .syra{
@@ -263,6 +279,7 @@ input[type="button"][value="Order Now"] {
 
 #dotted-note {
     text-decoration: underline dotted;
+    margin-top: 10px;
 }
 
 #special-note {
@@ -277,7 +294,6 @@ input[type="button"][value="Order Now"] {
     width: 900px;
     max-width: 90%;
     margin: 40px auto;
-
     background: #fdf8f0;
     border: 2px solid #C98B9E;
     border-radius: 10px;
@@ -298,10 +314,9 @@ input[type="button"][value="Order Now"] {
     text-align:center;
 }
 
-label{
+.form-box label {
     display: block;
-    font-weight: bold;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -394,6 +409,10 @@ input[type="button"][value="Submit"] {
   transform: translateY(-2px);
 }
 textarea {
-    display: block;
-    width: 100%;
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+    padding: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
 }
