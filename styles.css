@@ -1,3 +1,4 @@
+/*Name:Moksha,Admin Number:261274N*/
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +12,18 @@
     --ink: #2c211c;
     --pink: #eacad2;
   }
-  * { box-sizing: border-box; }
-
-body {
-    background-color: #f5e8df; 
-    font-family: 'Inter', sans-serif;
+  .Moksha{
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #f5e8df;
 }
+  * { box-sizing: border-box; }
  
-  /* hidden checkbox drives the toggle */
   #menuToggle{ display:none; }
  
   nav {
     background-color: #6e3146; 
+    position: fixed;
     display: flex; 
     align-items: center; 
     justify-content: flex-start;
@@ -32,8 +33,8 @@ body {
     z-index: 100;
 }
  .logo {
-    height: 80px; 
-    width: 80px;
+    height: 70px; 
+    width: 70px;
     border-radius: 50%;
     background: #f3f0e6;
     display: flex;
@@ -89,7 +90,7 @@ nav a:hover {
     .menu-btn{ display:flex; }
  
     nav ul {
-      display: none;              /* hidden by default on mobile */
+      display: none;              
       flex-direction: column;
       position: absolute;
       top: 100%;
@@ -123,7 +124,7 @@ nav a:hover {
 html, body {
     height: 100%;
 }
-.hero-image {
+.hero-of-my-own-life {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Yumora.jpg");
     height: 100vh;
     background-position: center;
@@ -131,7 +132,7 @@ html, body {
     background-size: cover;
     position: relative;
 }
-.hero-text {
+.lele {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -164,7 +165,7 @@ html {
     scroll-behavior: smooth;
 }
 .events-header {
-    width: 100%
+    width: 100%;
 }
 .events-intro {
     text-align:center;
@@ -173,11 +174,11 @@ html {
     color: #4a4a4a;
     font-size: 16px;
     font-style: italic;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
 }
-.wrap {
+.rose {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -186,17 +187,34 @@ html {
     margin: 0 auto;
     padding: 60px 24 px;
 }
-.wrap h2 {
+.rose h2 {
     width: 90%;
 }
     
 .event-card {
     background: #fdf8f0;
-    border: 1px solid #e5d9c3;
+    border: 1px solid #c98b9e;
     border-radius: 10px;
-    padding: 28px;
+    padding: 24px;
     flex: 1 1 260px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 170px;
+}
+
+.event-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: nowrap;
+}
+
+.event-date {
+    font-size: 14px;
+    white-space: nowrap;
 }
 .reserve-btn {
   display: inline-block;
@@ -207,15 +225,19 @@ html {
   border-radius: 10px;
   font-size: 14px;
 }
-.event-card h3 {
-  font-family: 'Playfair Display', serif;
-  color: #7a1f2b;
-  margin-bottom: 10px;
+.event-card .event-date {
+    display: block;
+    margin-top: 12px;
 }
-body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, sans-serif;
-  background: #f5e8d4;
+
+.event-card .reserve-btn {
+    margin-top: 10px;
+    align-self: flex-start;     
+}
+.event-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #7a1f2b;
+    margin-bottom: 10px;
 }
 main {
   display: flex;
@@ -230,10 +252,11 @@ main {
   max-width: 440px;
   width: 100%;
 }
-h2 {
+.mat {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #7a1f2b;
+  margin-top: 10px;
 }
 .subtitle {
   color: #6b6258;
@@ -243,7 +266,9 @@ label {
   display: block;
   margin-top: 16px;
 }
-input, select, textarea {
+.mop input,
+.mop textarea,
+.mop select {
   width: 100%;
   padding: 10px;
   border: 1px solid #d8cfc0;
@@ -421,7 +446,7 @@ footer{
   }
   .email-note svg{ width:18px; height:18px; stroke:var(--maroon); flex-shrink:0; }
 
-  .button{
+  .live {
     display:inline-block; 
     margin-top:34px; 
     padding:14px 30px; 
@@ -434,4 +459,4 @@ footer{
     text-transform:uppercase; 
     transition: background 0.2s ease;
   }
-  .button:hover{ background: var(--maroon-deep); }
+  .live:hover{ background: var(--maroon-deep); }

@@ -1,4 +1,5 @@
-/* Lin Yuru, 261460p*/
+/* Lin Yuru, 261460p */
+
 
 * {
     margin: 0;
@@ -6,22 +7,25 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: #f5e8df; 
+    background-color: #f5e8df;
     font-family: 'Inter', sans-serif;
 }
 
+
 nav {
-    background-color: #6e3146; 
-    display: flex; 
-    align-items: center; 
+    background-color: #6e3146;
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
     gap: 10px;
     padding: 0 30px;
 }
 
+
 .logo {
-    height: 80px; 
+    height: 80px;
     width: 80px;
     border-radius: 50%;
     background: #f3f0e6;
@@ -34,9 +38,11 @@ nav {
     flex-shrink: 0;
 }
 
+
 .menu-toggle {
     display: none;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -48,11 +54,13 @@ nav ul {
     align-items: center;
 }
 
+
 @media (max-width: 768px) {
     nav {
         flex-wrap: wrap;
         padding: 10px;
     }
+
 
 nav ul {
         gap: 15px;
@@ -60,14 +68,17 @@ nav ul {
         justify-content: center;
     }
 
+
     .hero-text h1 {
         font-size: 32px;
     }
 }
 
+
 .hamburger  {
     display: none;
 }
+
 
 @media (max-width: 480px) {
     nav {
@@ -79,12 +90,14 @@ nav ul {
         flex-wrap: nowrap;
     }
 
+
     .logo {
         height: 60px;
         width: 60px;
         flex-shrink: 0;
         flex-basis: 60px;
     }
+
 
     nav ul {
         display: grid;
@@ -97,18 +110,22 @@ nav ul {
         min-width: 0;
     }
 
+
     nav li {
         text-align: left;
     }
 }
 
+
     nav a {
         color: #f5e8df;
     }
 
+
 nav li {
     display: inline-block;
 }
+
 
 nav a {
     color: #f9f5f5;
@@ -120,16 +137,19 @@ nav a {
     letter-spacing: 1px;
 }
 
+
 nav a:hover {
     color: #eacad2;
     text-decoration: underline;
 }
+
 
 .hero-image {
     position: relative;
     height: 400px;
     overflow: hidden;
 }
+
 
 .hero-slide {
     position: absolute;
@@ -142,17 +162,21 @@ nav a:hover {
     animation: fadeSlide 12s infinite;
 }
 
+
 .slide1 {
     animation-delay: 0s;
 }
+
 
 .slide2 {
     animation-delay: 4s;
 }
 
+
 .slide3 {
     animation-delay: 8s;
 }
+
 
 @keyframes fadeSlide {
     0% {
@@ -172,6 +196,7 @@ nav a:hover {
     }
 }
 
+
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -180,6 +205,7 @@ nav a:hover {
     height: 100%;
     background: rgba(30, 61, 46, 0.55);
 }
+
 
 .hero-text {
     text-align: center;
@@ -193,12 +219,14 @@ nav a:hover {
     max-width: 600px;
 }
 
+
 .hero-text h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     margin: 0 0 4px 0;
     letter-spacing: 2px;
 }
+
 
 .hero-text p {
     font-style: italic;
@@ -209,6 +237,7 @@ nav a:hover {
     margin: 0 0 12px 0;
 }
 
+
 .fade-slider {
     position: relative;
     width: 100%;
@@ -216,6 +245,7 @@ nav a:hover {
     height: 400px;
     overflow: hidden;
 }
+
 
 .fade-slider img {
     position: absolute;
@@ -228,9 +258,11 @@ nav a:hover {
     transition: opacity 1s ease-in-out;
 }
 
+
 .fade-slider img.active {
     opacity: 1;
 }
+
 
 .btn-pill {
     display: inline-block;
@@ -243,6 +275,7 @@ nav a:hover {
     margin-top: 5px;
 }
 
+
 .about-section {
     display: flex;
     align-items: center;
@@ -251,11 +284,14 @@ nav a:hover {
     padding: 60px 80px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 20px;
 }
+
 
 .about-section.reverse {
     flex-direction: row-reverse;
 }
+
 
 .about-text {
     flex: 1;
@@ -263,18 +299,21 @@ nav a:hover {
     max-width: 450px;
 }
 
+
 .about-text h2 {
     font-size: 36px;
     margin-bottom: 15px;
 }
 
+
 .about-image img {
     width: 100%;
     max-width: 450px;      
-    aspect-ratio: 1 / 1;   
+    aspect-ratio: 1 / 1;  
     object-fit: cover;
     border-radius: 12px;
 }
+
 
 .team-grid {
     flex: 1;
@@ -282,9 +321,10 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 420px;   
+    max-width: 420px;  
     margin: 0 auto;
 }
+
 
 .team-piece {
     aspect-ratio: 1 / 1;
@@ -294,11 +334,12 @@ nav a:hover {
     background-color: #f5e8df;
     background-clip: content-box;
     background-origin: content-box;
-    padding: 16px;     
+    padding: 16px;    
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
+
 
 .team-piece:hover {
     transform: scale(1.15);
@@ -306,6 +347,7 @@ nav a:hover {
     border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
     z-index: 5;
 }
+
 
 .team-piece1 { background-image: url("images/photo_6289340114886398441_x-removebg-preview.png"); }
 .team-piece2 { background-image: url("images/photo_6289340114886398589_y-removebg-preview.png"); }
@@ -321,17 +363,20 @@ nav a:hover {
     background-position: center 25%;
 }
 
+
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     color:#000
 }
 
-p {
+
+.p2 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color:#000
 }
+
 
 @media (max-width: 768px) {
     .about-section {
@@ -340,9 +385,11 @@ p {
         gap: 30px;
     }
 
+
     .about-section.reverse {
         flex-direction: column;
     }
+
 
     .about-text {
         width: 100%;
@@ -352,9 +399,11 @@ p {
         order: 1;
     }
 
+
     .about-image {
         order: 3;
     }
+
 
     .about-image img {
         width: 100%;
@@ -366,21 +415,25 @@ p {
         margin: 0 auto;
     }
 
+
     .about-text h2 {
         font-size: 1.6rem;
     }
 
+
     .team-grid {
         order: 2;
-        max-width: 320px;   
+        max-width: 320px;  
         gap: 15px;
         margin: 0 auto;
     }
+
 
     .team-piece {
         padding: 10px;  
     }
 }
+
 
 @media (max-width: 480px) {
     .team-grid {
@@ -388,10 +441,12 @@ p {
         gap: 12px;
     }
 
+
     .about-text h2 {
         font-size: 1.4rem;
     }
 }
+
 
 .location-header h1 {
     font-size: 40px;
@@ -403,6 +458,7 @@ p {
     text-align: left;
 }
 
+
 .locations-column {
     display: flex;
     flex-wrap: wrap;
@@ -411,10 +467,12 @@ p {
     box-sizing: border-box;
 }
 
+
 .store-card {
-    flex: 1 1 280px; 
+    flex: 1 1 280px;
     min-width: 250px;
 }
+
 
 .store-card h2 {
     font-family: 'Playfair Display', 'Times New Roman', serif;
@@ -422,11 +480,13 @@ p {
     margin-bottom: 12px;
 }
 
+
 .store-card .divider {
     border: none;
     border-top: 3px solid #1a1a1a;
     margin-bottom: 16px;
 }
+
 
 .store-card .phone,
 .store-card .hours {
@@ -434,9 +494,15 @@ p {
     font-weight: 600;
 }
 
+
 .store-card .address {
     margin-top: 12px;
     color: #333;
     line-height: 1.5;
 }
+
+
+
+
+
 
