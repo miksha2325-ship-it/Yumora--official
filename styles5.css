@@ -1201,6 +1201,75 @@ img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
    justify-content:space-around;
    text-align:center;
 }
+.thank-you-body {
+ margin: 0;
+ padding: 20px;	
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f7ede2;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}		
+
+
+.thank-you-card {
+ background: #ffffff;
+ padding: 40px 30px;
+ border-radius: 16px;
+ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+ text-align: center;
+ max-width: 420px;
+ width: 100%;
+}
+
+
+.checkmark-circle {
+ width: 60px;
+ height: 60px;
+ background-color: #e8f5e9;
+ color: #2e7d32;
+ font-size: 32px;
+ font-weight: bold;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto 20px auto;
+}
+
+
+.thank-you-card h1 {
+ color: #333333;
+ margin: 0 0 12px 0;
+ font-size: 28px;
+}
+
+
+.message {
+ font-size: 14px;
+ color: #777777;
+ margin-bottom: 28px;
+ line-height: 1.5;
+}
+
+
+.btn-home {
+ display: inline-block;
+ background-color: #4a2c2a;
+ color: #ffffff;
+ padding: 12px 28px;
+ text-decoration: none;
+ font-weight: 600;
+ border-radius: 8px;
+ transition: all 0.2s ease;
+}
+
+
+.btn-home:hover {
+ background-color: #633c39;
+ transform: translateY(-2px);
+}
 
 /*End of Aryssa*/
 /*all forms*/
