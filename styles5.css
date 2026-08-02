@@ -261,22 +261,6 @@ main {
   font-weight: 700;
   color: #7a1f2b;
 }
-.subtitle {
-  color: #6b6258;
-  font-size: 14px;
-}
-label {
-  display: block;
-  margin-top: 16px;
-}
-.mop input,
-.mop textarea,
-.mop select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #d8cfc0;
-  border-radius: 6px;
-}
 
 .contact-hero{
     position: relative;
