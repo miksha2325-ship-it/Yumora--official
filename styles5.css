@@ -39,16 +39,13 @@ html {
     z-index: 100;
 }
  .logo {
-    height: 80px; 
-    width: 80px;
+    height: 70px; 
+    width: 70px;
     border-radius: 50%;
     background: #f3f0e6;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 12px;
-    text-align: center;
     flex-shrink: 0;
 }
 
@@ -914,7 +911,6 @@ h2 {
            
  table, th, td {
      border: 1px solid var(--nav-maroon);
-     padding: 6px 8px;
      margin: 0 auto;
      font-family: 'Playfair Display', serif;
     }
@@ -1020,17 +1016,6 @@ h2 {
     width: 100%
 }
 
-
-.aboutus-intro {
-    text-align:center;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-    color: #4a4a4a;
-    font-size: 16px;
-    font-style: italic;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 /*End of Arfa*/
 /*Aryssa*/
 
