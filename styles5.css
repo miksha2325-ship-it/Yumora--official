@@ -814,7 +814,6 @@ h2 {
 
  .arfapage {
     width: 100%;
-    background-color: var(--nav-beige);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -1175,6 +1174,32 @@ img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
 }
 .panda {
    text-decoration: none;
+}
+.size-card{
+   width: 900px;
+   max-width: 90%;
+   margin: 40px auto;
+   background: #fdf8f0;
+   border: 2px solid #C98B9E;
+   border-radius: 10px;
+   padding: 20px;
+
+
+   box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.size-card h2{
+   text-align:center;
+   margin-bottom:20px;
+   text-decoration:underline ;
+}
+
+
+.size-list{
+   display:flex;
+   justify-content:space-around;
+   text-align:center;
 }
 
 /*End of Aryssa*/
