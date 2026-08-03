@@ -1,4 +1,5 @@
 /*Name:Moksha,Admin Number:261274N*/
+/*Navigation Bar*/
 * {
     margin: 0;
     padding: 0;
@@ -38,16 +39,13 @@ html {
     z-index: 100;
 }
  .logo {
-    height: 80px; 
-    width: 80px;
+    height: 70px; 
+    width: 70px;
     border-radius: 50%;
     background: #f3f0e6;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 12px;
-    text-align: center;
     flex-shrink: 0;
 }
 
@@ -125,9 +123,8 @@ nav a:hover {
   }
    /* demo content so you can see the nav in context */
   .demo{ display:flex; align-items:center; justify-content:center; font-size:24px; color:#4c1729; }
-html, body {
-    height: 100%;
-}
+/*End of Navigation Bar*/
+/*Start of hero image*/
 .hero-of-my-own-life {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Yumora.jpg");
     height: 100vh;
@@ -168,6 +165,13 @@ html, body {
 html {
     scroll-behavior: smooth;
 }
+/*End of hero image*/
+/*Start of evnts page*/
+.me-love {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #7a1f2b;
+}
 .events-header {
     width: 100%;
 }
@@ -189,7 +193,7 @@ html {
     gap: 24px;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 24 px;
+    padding: 60px 24px;
 }
 .rose h2 {
     width: 90%;
@@ -248,41 +252,13 @@ main {
   justify-content: center;
   padding: 50px 20px;
 }
-.form-card {
-  background: #f5e8df;
-  border: 1px solid #e6dcc8;
-  border-radius: 10px;
-  padding: 36px;
-  max-width: 440px;
-  width: 100%;
-}
-.mat {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #7a1f2b;
-}
-.subtitle {
-  color: #6b6258;
-  font-size: 14px;
-}
-label {
-  display: block;
-  margin-top: 16px;
-}
-.mop input,
-.mop textarea,
-.mop select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #d8cfc0;
-  border-radius: 6px;
-}
+/*End of events page*/
 
 .contact-hero{
     position: relative;
     text-align: center;
     padding: 56px 24px 0;
-    background: radical-gradient(circle at 50% 0%, rgba(185,155,91,.18), transparent 65%);
+    background: radial-gradient(circle at 50% 0%, rgba(185,155,91,.18), transparent 65%);
 }
 .contact-hero h1{ font-size: 56px; margin:0;}
 
@@ -378,7 +354,7 @@ label {
 }
 .thank-you{ text-align: center; font-size: 14px; color: #6b5d54;margin-top: 10px;}
 footer{
-    background: var(--ink);
+    background-color: #6e3146;
     color: rgb(246,239,226,0.7);
     text-align: center;
     padding: 16px;
@@ -550,7 +526,7 @@ footer{
 }
 
 
-.pee67 {
+.pi7 {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -558,33 +534,6 @@ footer{
     line-height: 1.0;
     margin: 0 0 12px 0;
 }
-
-
-.fade-slider {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-
-
-.fade-slider img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
-.fade-slider img.active {
-    opacity: 1;
-}
-
 
 .btn-pill {
     display: inline-block;
@@ -770,6 +719,9 @@ h2 {
 }
 
 
+.thank-you{ text-align: center; font-size: 14px; color: #6b5d54;margin-top: 10px;}
+
+
 .location-header h1 {
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -782,7 +734,8 @@ h2 {
 
 
 .locations-column {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     flex-wrap: wrap;
     gap: 40px;
     padding: 40px;
@@ -822,6 +775,7 @@ h2 {
     color: #333;
     line-height: 1.5;
 }
+
 /*End of Yuru*/
 /*Arfa*/
 
@@ -832,7 +786,6 @@ h2 {
 
  .arfapage {
     width: 100%;
-    background-color: var(--nav-beige);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -871,6 +824,7 @@ h2 {
      object-fit: cover;
      object-position: center center;
      border-radius: 8px;
+     margin-top: 20px;
     }
        
  .content-wrapper {
@@ -930,7 +884,6 @@ h2 {
            
  table, th, td {
      border: 1px solid var(--nav-maroon);
-     padding: 6px 8px;
      margin: 0 auto;
      font-family: 'Playfair Display', serif;
     }
@@ -989,59 +942,6 @@ h2 {
   background: #601722;
 }
 
-
-/*application form*/
-.arfaform {
-    width: 400px;
-    max-width: 90%;
-    margin: 20px auto;
-    text-align: left;
-    background-color: var(--nav-white);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Playfair Display', serif;
-}
-.arfaform textarea,
-.arfaform select,
-.arfaform input[type="text"],
-.arfaform input[type="email"],
-.arfaform input[type="tel"] {
-    width: 100%;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    padding: 8px;
-}
-
-
-.arfaform input[type="submit"],
-.arfaform input[type="reset"] {
-    font-family: 'Playfair Display', serif;
-    background-color: var(--nav-maroon);
-    color: var(--nav-white);
-    border: none;
-    padding: 10px 24px;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 10px 5px;
-    display: inline-block;
-}
-
-
-.arfaform input[type="submit"]:hover,
-.arfaform input[type="reset"]:hover {
-    background-color: var(--nav-hover);
-    color: var(--nav-text);
-}
-
-
-.arfaform .arfa-form-btn {
-    text-align: center;
-}
-
 /*Banner for about us page*/
 .arfa-hero-image {
     height: 90vh;
@@ -1089,17 +989,6 @@ h2 {
     width: 100%
 }
 
-
-.aboutus-intro {
-    text-align:center;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-    color: #4a4a4a;
-    font-size: 16px;
-    font-style: italic;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
 /*End of Arfa*/
 /*Aryssa*/
 
@@ -1246,43 +1135,6 @@ img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
 .panda {
    text-decoration: none;
 }
-
-
-.syra{
-   text-decoration: none;
-   font-family:"playfair display";
-   text-align: center;
-}
-
-
-.haiza {
-   text-decoration: none;
-   font-weight: bold;
-   font-size: medium;
-}
-
-
-#special-note {
-   text-decoration: underline;
-}
-
-
-#dotted-note {
-   text-decoration: underline dotted;
-   margin-top: 10px;
-}
-
-
-#special-note {
-   text-decoration: underline;
-}
-
-
-#dotted-note {
-   text-decoration: underline wavy ;
-}
-
-
 .size-card{
    width: 900px;
    max-width: 90%;
@@ -1309,53 +1161,16 @@ img[src="Images/Dried Yoghurt Bowl Gemini.png"] {
    justify-content:space-around;
    text-align:center;
 }
-
-
-.form-box label {
-   display: block;
-   margin-top: 8px;
-   margin-bottom: 8px;
-}
-
-
-.form-page{
-   display:flex;
-   justify-content:center;
-   align-items:center;
-   min-height:100vh;
-   padding:40px 20px;
-}
-
-
-.form-box{
-    width:600px;
-   max-width:90%;
-   background:white;
-   padding:40px;
-   border:2px solid #C98B9E;
-   border-radius:15px;
-   box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-
-
-input[type="button"][value="Submit"] {
- width: 100%;        
- display: flex;
- justify-content: center;
- margin-top: 20px;       
-}
-
-
 .thank-you-body {
  margin: 0;
- padding: 20px;
+ padding: 20px;	
  min-height: 100vh;
  display: flex;
  justify-content: center;
  align-items: center;
  background-color: #f7ede2;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}		
 
 
 .thank-you-card {
@@ -1415,6 +1230,74 @@ input[type="button"][value="Submit"] {
  background-color: #633c39;
  transform: translateY(-2px);
 }
+
+/*End of Aryssa*/
+/*all forms*/
+.arfaform {
+    width: 400px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    background-color: var(--nav-white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Playfair Display', serif;
+}
+
+
+.arfaform textarea,
+.arfaform select,
+.arfaform input[type="text"],
+.arfaform input[type="email"],
+.arfaform input[type="tel"] {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 8px;
+}
+
+
+.arfaform .arfa-radio-label {
+    display: block;
+    margin-right: 15px;
+}
+
+
+.arfa-checkbox-label {
+    display: block;
+}
+
+
+.arfaform input[type="submit"],
+.arfaform input[type="reset"] {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--nav-maroon);
+    color: var(--nav-white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+
+.arfaform input[type="submit"]:hover,
+.arfaform input[type="reset"]:hover {
+    background-color: var(--nav-hover);
+    color: var(--nav-text);
+}
+
+
+.arfaform .arfa-form-btn {
+    text-align: center;
+}
+
+
 textarea {
    resize: vertical;
    min-height: 80px;
@@ -1423,10 +1306,61 @@ textarea {
    font-family: 'Playfair Display', serif;
    font-size: 1rem;
 }
+ 
+#special-note {
+   text-decoration: underline;
+}
 
 
 
 
+#dotted-note {
+   text-decoration: underline dotted;
+   margin-top: 10px;
+}
 
 
 
+
+#special-note {
+   text-decoration: underline;
+}
+
+
+
+
+#dotted-note {
+   text-decoration: underline wavy ;
+}
+ 
+.aryssa{
+   text-decoration: underline;
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   font-size:large;
+}
+.ary{
+   text-decoration:none;
+   font-family:"playfair display;"
+}
+.panda {
+   text-decoration: none;
+}
+
+
+
+
+.syra{
+   text-decoration: none;
+   font-family:"playfair display";
+   text-align: center;
+}
+
+
+
+
+.haiza {
+   text-decoration: none;
+   font-weight: bold;
+   font-size: medium;
+}

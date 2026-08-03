@@ -1,155 +1,211 @@
 <!-- Aryssa Haiza Binte Hairulnizam 261382F-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <Title> Order Form </Title>
-        <link rel="icon" href="images/Yumora Logo.png" type="image/png">
-        <link rel="stylesheet" href="styles5.css">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport"
+       content="width=device-width, initial-scale=1.0">
+       <Title> Order Form </Title>
+       <link rel="icon" href="images/Yumora Logo.png" type="image/png">
+       <link rel="stylesheet" href="styles5.css">
 </head>
-<body>
+<body class="arfapage">
 
-    <form action="thankiew.html">
-    <div class="form-page">
-    <div class="form-box">
-    
-  
+
+    <input type="checkbox" id="menuToggle">
+    <nav>
+            <img src="images/Yumora Logo.png" alt="Yumora Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="About-Us.html">About Us</a></li>
+                <li><a href="Careers.html">Career</a></li>
+                <li><a href="Product Page.html">Products</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="EventPage.html">Events</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <label class="menu-btn" for="menuToggle">
+                <span></span><span></span><span></span>
+            </label>
+    </nav>
+     <div class="demo"></div>
+
+
+
+   <form action="thankiew.html">
+   <div class="arfaform">
+
 
 <h1 class="syra">Order Form</h1>
-    <label for="custname">Your Name:</label> 
-    <input type="text" name="custname" id="custname"
-     placeholder="your full name" required> 
-<br>
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email"
-     placeholder="you@example.com" required>
-    <br>
+   <label for="custname">Your Name:</label>
+   <input type="text" name="custname" id="custname"
+    placeholder="your full name" required>
+<br><br>
+   <label for="email">Email:</label>
+   <input type="email" name="email" id="email"
+    placeholder="you@example.com" required>
+   <br><br>
 
-    <label for="phone no.">Phone Number:</label>
-    <input type="text" name="phone no." id="phone no." size="30"
-    placeholder="phone number" required>
-    </label>
+
+
+
+   <label for="phone no.">Phone Number:</label>
+   <input type="text" name="phone no."
+    id="phone no." size="30">
+   </label>
+<br><br>
+
 
 <fieldset>
 <br>
-    <legend>What are you ordering?</legend>
-    <label><input type="radio"
-    name="products" checked> Dried Yoghurt Bar</label>
-    <br>
-    <label><input type="radio"
-    name="products" value="bites">Dried Yoghurt Bites</label>
-    <br>
-     <label><input type="radio"
-    name="products" value="bowl">Dried Yoghurt Bowl</label>
-    <br>
-     <label><input type="radio"
-    name="products" value="smoothie">Smoothie</label>
-<br>
+   <legend>What are you ordering?</legend>
+   <label class="arfa-radio-label"><input type="radio"
+   name="products" checked> Dried Yoghurt Bar</label>
+   <br>
+
+
+   <label class="arfa-radio-label"><input type="radio"
+   name="products" value="bites">Dried Yoghurt Bites</label>
+   <br>
+
+
+    <label class="arfa-radio-label"><input type="radio"
+   name="products" value="bowl">Dried Yoghurt Bowl</label>
+   <br>
+
+
+    <label class="arfa-radio-label"><input type="radio"
+   name="products" value="smoothie">Smoothie</label>
+<br><br>
+
+
 </fieldset>
+<br>
 <h1 class="haiza">Choose Your Flavour</h1>
 <select name="flavour" id="dried yoghurt">
-    <option value="strawberry">Strawberry</option>
-    <option value="mango">Mango</option>
-    <option value="banana"> Banana</option>
-    <option value="kiwi">Kiwi</option>
-    <option value="raspberry">Raspberry</option>
+   <option value="strawberry">Strawberry</option>
+   <option value="mango">Mango</option>
+   <option value="banana"> Banana</option>
+   <option value="kiwi">Kiwi</option>
+   <option value="raspberry">Raspberry</option>
 </select>
-<br>
+
+
+<br><br>
+
+
 <fieldset>
-    <legend>Cup/Bowl size</legend>
-    <label><input type="radio"
-    name="size" checked>Small</label>
-    <br>
-    <label><input type="radio"
-    name="size" value="medium">Medium</label>
-    <br>
-     <label><input type="radio"
-    name="size" value="Large">Large</label>
-     </fieldset>
-<br>
+   <legend>Cup/Bowl size</legend>
+   <label class="arfa-radio-label"><input type="radio"
+   name="size" checked>Small</label>
+   <br>
+   <label class="arfa-radio-label"><input type="radio"
+   name="size" value="medium">Medium</label>
+   <br>
+    <label class="arfa-radio-label"><input type="radio"
+   name="size" value="Large">Large</label>
+    </fieldset>
+
+
+<br><br>
+
+
 <h1 class="haiza">Quantity of Product</h1>
 <input type="number" name="qty"
 min="1" max="10" value="1">
-<br>
+<br><br>
+
+
 <h1 class="haiza">Toppings (Only for Dried Yoghurt Bowl) </h1>
 <br>
-<p id=dotted-note> Fruits </p>
-<label><input type="checkbox"
-    name="apple" value="yes"> Apple </label>
-    <label><input type="checkbox"
-    name="banana" value="yes"> Banana </label>
-    <label><input type="checkbox"
-    name="dragonfruit" value="yes"> Dragonfruit </label>
-    <label><input type="checkbox"
-    name="raspberry" value="yes"> Raspberry </label>
-    <label><input type="checkbox"
-    name="blueberry" value="yes"> Blueberry </label>
-    <label><input type="checkbox"
-    name="mango" value="yes"> Mango </label>
-    <label><input type="checkbox"
-    name="strawberry" value="yes"> Strawberry </label>
-    <label><input type="checkbox"
-    name="pear" value="yes"> Pear </label>
-    <label><input type="checkbox"
-    name="kiwi" value="yes"> Kiwi </label>
-    <label><input type="checkbox"
-    name="avocado" value="yes"> Avocado </label>
-    <label><input type="checkbox"
-    name="peach" value="yes"> Peach </label>
-<br>
+<p id="dotted-note"> Fruits </p>
+<label class="arfa-checkbox-label"><input type="checkbox"
+   name="apple" value="yes"> Apple </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="banana" value="yes"> Banana </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="dragonfruit" value="yes"> Dragonfruit </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="raspberry" value="yes"> Raspberry </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="blueberry" value="yes"> Blueberry </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="mango" value="yes"> Mango </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="strawberry" value="yes"> Strawberry </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="pear" value="yes"> Pear </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="kiwi" value="yes"> Kiwi </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="avocado" value="yes"> Avocado </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="peach" value="yes"> Peach </label>
+<br><br>
+
+
 <p id="dotted-note">Nuts and Grains</p>
-    <label><input type="checkbox"
-    name="granola" value="yes"> Granola </label>
-    <label><input type="checkbox"
-    name="oats" value="yes"> Oats </label>
-    <label><input type="checkbox"
-    name="almond" value="yes"> Almond </label>
-<br>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="granola" value="yes"> Granola </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="oats" value="yes"> Oats </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="almond" value="yes"> Almond </label>
+<br><br>
+
+
 <p id="dotted-note">Sauce</p>
-<label><input type="checkbox"
-    name="honey" value="yes"> Honey </label>
-    <label><input type="checkbox"
-    name="citrus berry syrup " value="yes">Citrus Berry Syrup</label>
-    <label><input type="checkbox"
-    name="cinammon honey syrup " value="yes">Cinnamon Honey Syrup</label>
-<br>
-    <div class="textarea.winny">
-    <h1 class=haiza> Special Requests:</h1>
-    <textarea name="notes" id="notes"
-    rows="4" cols="40">
+<label class="arfa-checkbox-label"><input type="checkbox"
+   name="honey" value="yes"> Honey </label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="citrus berry syrup " value="yes">Citrus Berry Syrup</label>
+   <label class="arfa-checkbox-label"><input type="checkbox"
+   name="cinnamon honey syrup " value="yes">Cinnamon Honey Syrup</label>
+<br><br>
+
+
+   <div class="textarea.winny">
+   <h1 class="haiza"> Special Requests:</h1>
+   <textarea name="notes" id="notes"
+   rows="4" cols="40">
 </textarea>
 </div>
+
+
+<br><br>
 <p>Pickup Date & Time</p>
 <input type="datetime-local" name="pickup">
-<br>
+<br><br>
+
+
 <p> Which store are you going to collect it at? </p>
 <select name="places" id="locations">
-    <option value="nyp food central">NYP Food Central (Main HQ) </option>
-    <option value="suntec city">Suntec City</option>
-    <option value="seletar mall">Seletar Mall</option>
-    <option value="tampines mall"> Tampines Mall</option>
-    <option value="eastpoint mall">Eastpoint mall</option>
-    <option value="nex">NEX</option>
-    <option value="westgate">Westgate</option>
+   <option value="nyp food central">NYP Food Central (Main HQ) </option>
+   <option value="suntec city">Suntec City</option>
+   <option value="seletar mall">Seletar Mall</option>
+   <option value="tampines mall"> Tampines Mall</option>
+   <option value="eastpoint mall">Eastpoint mall</option>
+   <option value="nex">NEX</option>
+   <option value="westgate">Westgate</option>
 </select>
 
-<br>
 
-<input type="submit" value="Submit"
-style="background-color: white;
-color: black;
-border: 1px solid black;
-border-radius: 5px;
-cursor: pointer;">
+
+
+<br><br>
+
+
+<div class="arfa-form-btn">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
 </div>
-</div>
-</div>
+
+
 </div>
 </form>
 </body>
 </html>
+
 
 
 
